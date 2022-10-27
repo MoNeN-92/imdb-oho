@@ -72,12 +72,13 @@
  .opac{
     background-color: #3f3221;
     z-index: 0;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     opacity: 0.8;
     /* padding-top: 70px; */
     position: relative;
     top: 70px;
+    height: 800px;
     
   }
   .siz{
