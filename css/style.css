@@ -268,9 +268,12 @@
   }
   .card:hover{
     background-color: #f3f3f3;
+    color: #e1af12;
+    cursor: pointer;
   }
   .cont-flu{
     background-color: #f3f3f3;
+    
   }
   .itemcont {
     float:left;
@@ -319,6 +322,18 @@
 .scorp:hover .play2{display:block}
 .itemcont2 img:hover{
     filter: blur(3px);
+}
+.ant{
+    width: 87%;
+}
+.dr{
+    width: 87%;
+}
+.thor{
+    width: 87%;
+}
+.scorp{
+    width: 87%;
 }
 
 .itemcont2 a i {
