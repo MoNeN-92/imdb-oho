@@ -79,7 +79,7 @@
     top: 70px;
     height: 100%;
     max-height: 100%;
-   
+
 
 }
 
@@ -93,17 +93,16 @@
 }
 
 .card__rating {
-    display: inline-block;
-    position: relative;
-    padding: 1rem;
-    /* margin-left: 3rem; */
-    /* color: #fff; */
+    width: 95px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     border-top: 4px solid #e1af12;
     border-bottom: 4px solid #e1af12;
     border-left: 4px solid #e1af12;
     border-right: 4px solid grey;
-    /* border: 4px solid #e1af12; */
     font-weight: 700;
     font-size: 32px;
     font-family: 'Noto Sans Mono', monospace;
@@ -137,7 +136,8 @@
     background-color: #ffffff;
     padding: 16px 12px;
 }
-.more:hover{
+
+.more:hover {
     background-color: #e1af12;
 }
 
@@ -210,6 +210,10 @@
     z-index: 10;
 }
 
+.active {
+    color: #e1af12 !important;
+}
+
 .my-carousel-caption {
     position: absolute;
     right: 12%;
@@ -221,76 +225,137 @@
     /* text-align: center; */
     top: 15%;
     max-height: 100%;
-    
+
 }
-.card-body:hover h5{
-color: red;
+
+.card-body:hover h5 {
+    color: red;
 }
-.btnlate{
+
+.card-body p {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.card-body h5 {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.btnlate {
     padding: 7px 0px;
     width: 140px;
 }
-.btnlate:hover{
-    background-color: #e1af12!important;
+
+.btnlate:hover {
+    background-color: #e1af12 !important;
 }
+
 .btnlate a {
     color: #0a0a0a;
     text-decoration: none;
 }
-.ontv{
+
+.ontv {
     cursor: pointer;
     width: 9%;
-  
-  
+
+
 }
+
 .ontv {
     box-shadow: inset 0 0 0 0 #e1af12;
     color: black;
-    
+
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
- .ontv:hover {
+}
+
+.ontv:hover {
     box-shadow: inset 110px 0 0 0 #e1af12;
     border-radius: 3px;
-  
-  }
-  .inteathr{
+
+}
+
+.inteathr {
     width: 16%;
-  }
-  .inteathr {
+}
+
+.inteathr {
     box-shadow: inset 0 0 0 0 #e1af12;
     color: black;
-    
+
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
- .inteathr:hover {
+}
+
+.inteathr:hover {
     box-shadow: inset 210px 0 0 0 #e1af12;
     border-radius: 3px;
     cursor: pointer;
-  
-  }
-  .card:hover{
+
+}
+
+.card:hover {
     background-color: #f3f3f3;
     color: #e1af12;
     cursor: pointer;
-  }
-  .cont-flu{
-    background-color: #f3f3f3;
-    
-  }
-  .itemcont {
-    float:left;
-    position:relative
+    transform: scale(1.2);
+    box-shadow: 0px 0px 4px 1px black;
+    padding: 14px;
+    z-index: 10;
 }
+
+.card {
+    margin-left: 7px;
+    margin-right: 7px;
+    border: 1px solid transparent !important;
+}
+
+.cont-flu {
+    background-color: #f3f3f3;
+
+}
+
+.itemcont {
+    float: left;
+    position: relative
+}
+
+.itemcont img {
+    max-width: 100%;
+}
+
+.dwayne-right img {
+    max-width: 100%;
+}
+
 .col-lg-6 {
     flex: 0 0 auto;
     width: 48%;
 }
-.itemcont:hover .play{display:block}
-.itemcont img:hover{
+
+.carousel-control-prev {
+    width: 10%;
+}
+
+.carousel-control-next {
+    width: 10%;
+}
+
+.my-slid-content {
+    max-width: 100%;
+}
+
+.itemcont:hover .play {
+    display: block
+}
+
+.itemcont img:hover {
     filter: blur(3px);
 }
-.play{
+
+.play {
     position: absolute;
     display: none;
     top: 43%;
@@ -302,54 +367,73 @@ color: red;
 }
 
 .itemcont a i {
-        /* background: #fff; */
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        /* padding: 18px; */
-        font-size: 60px;
-        color: #fff;
-        cursor: pointer;
-        opacity: 0.8;
-       
+    /* background: #fff; */
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    /* padding: 18px; */
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+
 }
+
 .itemcont2 {
-    float:left;
-    position:relative;
+    float: left;
+    position: relative;
     height: 100%;
-    
+
 }
-.ant:hover .play1{display:block}
-.dr:hover .play2{display:block}
-.thor:hover .play1{display:block}
-.scorp:hover .play2{display:block}
-.itemcont2 img:hover{
+
+.ant:hover .play1 {
+    display: block
+}
+
+.dr:hover .play2 {
+    display: block
+}
+
+.thor:hover .play1 {
+    display: block
+}
+
+.scorp:hover .play2 {
+    display: block
+}
+
+.itemcont2 img:hover {
     filter: blur(3px);
 }
-.ant{
+
+.ant {
     width: 87%;
 }
-.dr{
+
+.dr {
     width: 87%;
 }
-.thor{
+
+.thor {
     width: 87%;
 }
-.scorp{
+
+.scorp {
     width: 87%;
 }
 
 .itemcont2 a i {
-        /* background: #fff; */
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        /* padding: 18px; */
-        font-size: 60px;
-        color: #fff;
-        cursor: pointer;
-        opacity: 0.8;
+    /* background: #fff; */
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    /* padding: 18px; */
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
 }
+
 .play1 {
     position: absolute;
     display: none;
@@ -360,6 +444,7 @@ color: red;
     right: 0px;
     z-index: 100;
 }
+
 .play2 {
     position: absolute;
     display: none;
@@ -370,18 +455,208 @@ color: red;
     right: 0px;
     z-index: 100;
 }
-.popmovies{
+
+.popmovies {
     width: 26%;
 }
+
 .popmovies {
     box-shadow: inset 0 0 0 0 #e1af12;
     color: black;
-    
+
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
- .popmovies:hover {
+}
+
+.popmovies:hover {
     box-shadow: inset 340PX 0 0 0 #e1af12;
     border-radius: 3px;
     cursor: pointer;
+
+}
+
+.lexsus a img {
+    max-width: 100%;
+}
+
+.mospopmovimgsize {
+
+    height: 333px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.showmore {
+    padding: 7px;
+    text-align: center;
+    width: 172px;
+    height: 35px;
+    background-image: linear-gradient(90deg, #e1ad11 0%, #eb7531 100%);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0px !important;
+    color: var(--bs-card-color);
+}
+
+.showmore a {
+    text-decoration: none;
+}
+
+.comingsoon {
+    position: relative;
+    overflow: hidden;
+}
+
+.coming {
+    left: 19%;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    width: 62%;
+    margin: auto;
+    right: 19%;
+    max-width: 100%;
+}
+
+.soon {
+    box-shadow: inset 0 0 0 0 #e1af12;
+    color: black;
+    width: 13%;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.soon:hover {
+    box-shadow: inset 110px 0 0 0 #e1af12;
+    border-radius: 3px;
+    cursor: pointer;
+
+
+}
+
+.coming hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, #e2aa15 0%, #ea802c 100%);
+}
+
+/* .soon:hover{
+    background-image: linear-gradient(90deg, #e2aa15 0%, #ea802c 100%);
+    border-radius: 3px;
+    cursor: pointer;
+    width: 10%;
+    transition: linear 0.3s;
   
-  }
+  } */
+
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+
+.rating label:last-child .icon {
+    color: #000;
+}
+
+.rating:not(:hover) label input:checked~.icon,
+.rating:hover label:hover input~.icon {
+    color: #ffdc69;
+}
+
+.rating label input:focus:not(:checked)~.icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #ffdc69;
+}
+
+.datamovie {
+    margin: 18px;
+}
+
+.datarating {
+    height: 55px;
+}
+
+.moreinfo a {
+    color: #d26b30;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.m-info:hover {
+font-size: 18px;
+}
+
+.X-Men {
+    font-size: 14px;
+}
+
+.X-Men-Days {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Panton Mtav3";
+}
+
+.action {
+    font-size: 14px;
+    color: #e1ad13;
+    font-family: "Panton Nusx3";
+}
+
+.soon {
+    font-size: 18px;
+}
+
+.w-5 {
+    width: 5% !important;
+}
