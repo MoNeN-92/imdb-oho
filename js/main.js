@@ -7,6 +7,14 @@ navbar.forEach(Element => {
     })
 });
 
-$(':radio').change(function() {
-    console.log('New star rating: ' + this.value);
-  });
+// $(':radio').change(function() {
+//     console.log('New star rating: ' + this.value);
+//   });
+
+let myCardBtn =document.querySelector('.moviesky')
+let content = document.querySelector('.skycraper')
+ 
+myCardBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    content.classList.toggle('d-none')
+})
