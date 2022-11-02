@@ -62,4 +62,19 @@ transBtn.addEventListener('click', function(e){
     catGirl.classList.add('d-none')
     deepwater.classList.add('d-none')
     skycrap.classList.add('d-none')
+});
+
+let serials = document.querySelector('.serials')
+let tv = document.querySelector('.tv')
+let hr = document.querySelector('.chan')
+
+tv.addEventListener('click', function(e){
+e.preventDefault();
+hr.classList.remove('wid')
+hr.classList.add('nextwid')
 })
+serials.addEventListener('click', function(e){
+    e.preventDefault();
+    hr.classList.remove('nextwid')
+    hr.classList.add('wid')
+    })

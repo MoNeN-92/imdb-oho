@@ -492,7 +492,8 @@
     height: 35px;
     background-image: linear-gradient(90deg, #e1ad11 0%, #eb7531 100%);
 }
-.showmore:hover{
+
+.showmore:hover {
     transform: scale(1.2);
     box-shadow: 0px 0px 3px 4px #d26b30
 }
@@ -640,7 +641,7 @@
 }
 
 .m-info:hover {
-font-size: 18px;
+    font-size: 18px;
 }
 
 .X-Men {
@@ -667,49 +668,70 @@ font-size: 18px;
 .w-5 {
     width: 5% !important;
 }
-.right-cat-girls{
+
+.right-cat-girls {
     top: 30%;
     left: 76%;
     transform: translateX(-50%);
     position: absolute;
     z-index: 9;
 }
+
 .play-butt {
     position: absolute;
     left: 33%;
     bottom: 44%;
- 
+
 
 }
-.play-butt:hover{
+
+.play-butt:hover {
     transform: scale(1.3);
     animation: horizontal-shaking 0.5s;
- animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
+
 @keyframes horizontal-shaking {
-    0% { transform: translateX(0) }
-    25% { transform: translateX(5px) }
-    50% { transform: translateX(-5px) }
-    75% { transform: translateX(5px) }
-    100% { transform: translateX(0) }
-   }
-.my-hr-line{
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(5px)
+    }
+
+    50% {
+        transform: translateX(-5px)
+    }
+
+    75% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.my-hr-line {
     border-bottom: 3px solid #000;
     width: 100%;
     opacity: 0.25;
     margin-top: -2px;
 }
-.card-list-in-image{
+
+.card-list-in-image {
     background-color: #101010;
-   left: 0;
+    left: 0;
     padding: 24px;
     bottom: 0;
     position: absolute;
 
 }
-.my-card-group .card{
-background-color: transparent;
-border: none;
+
+.my-card-group .card {
+    background-color: transparent;
+    border: none;
 }
 
 .card-list-in-image .my-card-group:hover {
@@ -721,13 +743,144 @@ border: none;
     padding: 14px;
     z-index: 10;
 }
-.cat-girl{
+
+.cat-girl {
     box-shadow: 0px 0px 50px 0px black;
 }
-.hide{
+
+.hide {
     display: none;
 
 }
-.show{
+
+.show {
     display: block;
+}
+
+.borntoday {
+    box-shadow: inset 0 0 0 0 #e1af12;
+    color: black;
+    width: 10%;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.borntoday:hover {
+    box-shadow: inset 110px 0 0 0 #e1af12;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.my-hr-line-born {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    opacity: 0.05;
+    margin-top: -3px;
+}
+
+
+.bornhr {
+    border: none;
+    z-index: 5;
+    opacity: 1;
+    margin: 1;
+    height: 3px;
+    background-image: linear-gradient(90deg, #e2aa15 0%, #ea802c 100%);
+}
+
+.bacground-color {
+    background-color: whitesmoke;
+}
+
+.Celebrity {
+    padding: 3px;
+    box-shadow: inset 0 0 0 0 #e1af12;
+    color: black;
+    width: 12%;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.Celebrity:hover {
+    box-shadow: inset 140px 0 0 0 #e1af12;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.celebrity-news-data{
+    width: 75px;
+    height: 53px;
+    border-radius: 5px;
+    background-color: #ececec;
+    padding: 15px 12px;
+}
+.nicolas{
+    width: 24%;
+    margin-left: 15px;
+}
+.celebrity-content{
+    border-radius: 5px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.01));
+    background-color: #f3f3f3;
+    padding: 30px 30px;
+    margin-left: 25px;
+}
+.readmmore{
+    text-decoration: none;
+    /* justify-content: center; */
+    text-align: center;
+}
+.marg{
+    margin-left: 45px;
+}
+.chris{
+    border-radius: 5px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.01));
+    background-color: #f3f3f3;
+    padding: 30px 30px;
+    margin-left: 25px;
+ 
+}
+.chriis{
+    width: 30%;
+    margin-left: 15px;
+}
+.cate{
+    border-radius: 5px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.01));
+    background-color: #f3f3f3;
+    padding: 30px 30px;
+    margin-left: 25px;
+   
+}
+.catte{
+    width: 30%;
+    margin-left: 15px;
+}
+.about-nicolas{
+    opacity: 0.702;
+font-size: 12px;
+color: #4b4b4b;
+font-family: "Panton Nusx3";
+}
+.popular {
+    padding: 3px;
+    box-shadow: inset 0 0 0 0 #e1af12;
+    color: black;
+    width: 14%;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.popular:hover {
+    box-shadow: inset 140px 0 0 0 #e1af12;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tv:hover {
+    box-shadow: inset 170px 0 0 0 #e1af12;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.wid{
+    width: 11%;
+}
+.nextwid{
+    width: 14%;
+    margin-left: 14%;
 }
