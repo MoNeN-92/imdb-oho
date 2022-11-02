@@ -67,14 +67,23 @@ transBtn.addEventListener('click', function(e){
 let serials = document.querySelector('.serials')
 let tv = document.querySelector('.tv')
 let hr = document.querySelector('.chan')
+let tvshow = document.querySelector('.tvshoww')
+let seri = document.querySelector('.serialls')
 
-tv.addEventListener('click', function(e){
-e.preventDefault();
+tv.addEventListener('click', function(){
+
 hr.classList.remove('wid')
 hr.classList.add('nextwid')
+seri.classList.add('d-none')
+tvshow.classList.add('d-block')
+tvshow.classList.remove('d-none')
+
 })
-serials.addEventListener('click', function(e){
-    e.preventDefault();
+serials.addEventListener('click', function(){
+  
     hr.classList.remove('nextwid')
+    tvshow.classList.add('d-none')
+    seri.classList.add('d-block')
+    seri.classList.remove('d-none')
     hr.classList.add('wid')
     })
