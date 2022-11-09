@@ -261,14 +261,11 @@
 .ontv {
     cursor: pointer;
     width: 9%;
-
-
 }
 
 .ontv {
     box-shadow: inset 0 0 0 0 #e1af12;
     color: black;
-
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -494,6 +491,7 @@
 }
 
 .showmore:hover {
+    cursor: pointer;
     transform: scale(1.2);
     box-shadow: 0px 0px 3px 4px #d26b30
 }
@@ -633,19 +631,31 @@
 .datarating {
     height: 55px;
 }
+.moreinfo{
+    width: 10%;
+}
 
-.moreinfo a {
+.moreinfo  {
     color: #d26b30;
     font-size: 12px;
     text-decoration: none;
+    cursor: pointer;
+}
+.moreinfo:hover {
+   transform: scale(1.2);
+  
 }
 
-.m-info:hover {
-    font-size: 18px;
+.X-Men2 {
+    font-size: 14px;
+    width: 40%;
+    max-width: 50%;
 }
 
 .X-Men {
     font-size: 14px;
+    width: 40%;
+    max-width: 50%;
 }
 
 .X-Men-Days {
@@ -734,15 +744,7 @@
     border: none;
 }
 
-.card-list-in-image .my-card-group:hover {
-    background-color: #101010;
-    color: #e1af12;
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 4px 1px black;
-    padding: 14px;
-    z-index: 10;
-}
+
 
 .cat-girl {
     box-shadow: 0px 0px 50px 0px black;
@@ -988,4 +990,7 @@ font-family: "Open Sans";
 .soc{
     float: right;
     text-align: end;
+}
+.Morre{
+    transition: all 0.7s;
 }

@@ -9,11 +9,11 @@ navbar.forEach(Element => {
 
 
 
-let skyBtn =document.querySelector('.moviesky')
-let hangBtn =document.querySelector('.moviehang')
-let girlBtn =document.querySelector('.moviegirl')
-let deepbtn =document.querySelector('.moviedeep')
-let transBtn =document.querySelector('.movietrans')
+let skyBtn = document.querySelector('.moviesky')
+let hangBtn = document.querySelector('.moviehang')
+let girlBtn = document.querySelector('.moviegirl')
+let deepbtn = document.querySelector('.moviedeep')
+let transBtn = document.querySelector('.movietrans')
 
 let skycrap = document.querySelector('.skycraper')
 let transformer = document.querySelector('.transformers')
@@ -23,7 +23,7 @@ let deepwater = document.querySelector('.deepwater')
 
 
 
-skyBtn.addEventListener('click', function(e){
+skyBtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.add('d-none')
     hangover.classList.add('d-none')
@@ -31,7 +31,7 @@ skyBtn.addEventListener('click', function(e){
     deepwater.classList.add('d-none')
     skycrap.classList.remove('d-none')
 })
-hangBtn.addEventListener('click', function(e){
+hangBtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.add('d-none')
     hangover.classList.remove('d-none')
@@ -39,7 +39,7 @@ hangBtn.addEventListener('click', function(e){
     deepwater.classList.add('d-none')
     skycrap.classList.add('d-none')
 })
-girlBtn.addEventListener('click', function(e){
+girlBtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.add('d-none')
     hangover.classList.add('d-none')
@@ -47,7 +47,7 @@ girlBtn.addEventListener('click', function(e){
     deepwater.classList.add('d-none')
     skycrap.classList.add('d-none')
 })
-deepbtn.addEventListener('click', function(e){
+deepbtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.add('d-none')
     hangover.classList.add('d-none')
@@ -55,7 +55,7 @@ deepbtn.addEventListener('click', function(e){
     deepwater.classList.remove('d-none')
     skycrap.classList.add('d-none')
 })
-transBtn.addEventListener('click', function(e){
+transBtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.remove('d-none')
     hangover.classList.add('d-none')
@@ -70,20 +70,36 @@ let hr = document.querySelector('.chan')
 let tvshow = document.querySelector('.tvshoww')
 let seri = document.querySelector('.serialls')
 
-tv.addEventListener('click', function(){
+tv.addEventListener('click', function () {
 
-hr.classList.remove('wid')
-hr.classList.add('nextwid')
-seri.classList.add('d-none')
-tvshow.classList.add('d-block')
-tvshow.classList.remove('d-none')
+    hr.classList.remove('wid')
+    hr.classList.add('nextwid')
+    seri.classList.add('d-none')
+    tvshow.classList.add('d-block')
+    tvshow.classList.remove('d-none')
 
 })
-serials.addEventListener('click', function(){
-  
+serials.addEventListener('click', function () {
+
     hr.classList.remove('nextwid')
     tvshow.classList.add('d-none')
     seri.classList.add('d-block')
     seri.classList.remove('d-none')
     hr.classList.add('wid')
-    })
+})
+
+let moreCard = document.querySelector('.showmorecontent')
+let moreBtn = document.querySelector('#show-popular-movies')
+
+
+moreBtn.addEventListener('click', function(){
+    moreCard.classList.toggle('d-none')
+    moreCard.classList.toggle('Morre')
+})
+let moreInfoBtn = document.querySelector('.m-info')
+let X_Men = document.querySelector('.X-Men2')
+
+
+moreInfoBtn.addEventListener('click', function(){
+    X_Men.classList.toggle('d-none')
+})
