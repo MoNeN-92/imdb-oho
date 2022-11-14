@@ -103,3 +103,30 @@ let X_Men = document.querySelector('.X-Men2')
 moreInfoBtn.addEventListener('click', function(){
     X_Men.classList.toggle('d-none')
 })
+
+
+let openDrop = document.querySelector('.chose')
+let openDroptext = document.querySelector('.chose span')
+let dropContent = document.querySelector('.costumselect ul')
+let dropIcon = document.querySelector('.carett')
+let optop = document.querySelectorAll('.costumselect ul li')
+let inp = document.querySelector('input[name="datachos"]')
+
+openDrop.addEventListener('click', function(){
+    dropContent.classList.toggle('show')
+    dropIcon.classList.toggle('fa-caret-down')
+})
+openDrop.addEventListener('change', function handleChange(event) {
+
+  });
+optop.forEach(el=>{
+    el.addEventListener('click', function(){
+        let values = this.getAttribute('data-chos');
+        dropContent.classList.remove('show');
+        dropIcon.classList.remove('fa-caret-down');
+        openDroptext.innerHTML =   inp.value = values;
+        inp.value = values;
+      
+
+    })
+})

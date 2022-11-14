@@ -1,6 +1,7 @@
-/* body{
-    overflow: hidden;
-} */
+ul { 
+    list-style-type: none;
+ }
+
 .nav-bar ul li a {
     color: #fff !important;
 }
@@ -993,4 +994,71 @@ font-family: "Open Sans";
 }
 .Morre{
     transition: all 0.7s;
+}
+.navhead{
+    /* height: 55px;
+    width: 100%; */
+    
+    background: #2a2a2a;
+}
+.imdb-logo{
+    width: 10%;
+}
+.imdb-logo img{
+    width: 75px;
+    max-width: 100%;
+    height: 35px;
+     border-radius: 3px;
+}
+.serch input{
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-top: 1px solid #0b0b0b;
+    border-bottom: 1px solid #0b0b0b;
+    border-left: 1px solid #0b0b0b;
+}
+.serc{
+    padding: 13px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.option{
+    margin: 0px;
+}
+.chose{
+    cursor: pointer;
+    color: #acacac;
+    width: 145px;
+    background-color: #2a2a2a;
+    padding: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /* border-bottom: 1px solid #0b0b0b; */
+    z-index: 60;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    margin-top: 12px;
+}
+.costumselect ul{
+    display: none;
+}
+.costumselect ul.show{
+    display: block;
+}
+.costumselect ul li {
+    display: block;
+    padding: 7px 0px;
+   
+}
+.costumselect ul li:hover{
+    background-color: #4b4b4b;
+    border-radius: 3px;
+}
+.carett{
+    margin-right: 12px;
 }
