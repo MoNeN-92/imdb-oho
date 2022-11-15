@@ -2,6 +2,10 @@ ul {
     list-style-type: none;
  }
 
+ a {
+    text-decoration: none;
+ }
+
 .nav-bar ul li a {
     color: #fff !important;
 }
@@ -299,6 +303,25 @@ ul {
     border-radius: 3px;
 
 }
+@media only screen and  (max-width: 990px){
+    .ontv {
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .ontv {
+        box-shadow: inset 0 0 0 0 transparent;
+        color: black;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    
+    .ontv:hover {
+        box-shadow: inset 110px 0 0 0 transparent;
+        border-radius: 3px;
+    
+    }
+}
 
 .inteathr {
     width: 16%;
@@ -373,6 +396,7 @@ ul {
     position: relative;
     width: 100%!important;
     margin: auto;
+    max-width: 100%;
 }
 }
 
@@ -464,16 +488,11 @@ ul {
 
 .ant {
     width: 87%;
-}
-
-
+};
 
 .dr {
     width: 87%;
-}
-@media only screen and  (max-width: 990px){
-
-}
+};
 
 .thor {
     width: 87%;
@@ -520,6 +539,9 @@ ul {
     z-index: 100;
 }
 @media only screen and  (max-width: 990px){
+    .itemcont img{
+        width: 100%;
+    }
     .ant img {
         width: 100%;
        
@@ -633,6 +655,13 @@ ul {
 .comingsoon {
     position: relative;
     overflow: hidden;
+   
+}
+@media only screen and  (max-width: 990px){
+    .comingsoon {
+       
+        display: none;
+    }
 }
 
 .coming {
@@ -1129,6 +1158,7 @@ text-align: center;
 }
 .footcont{
     background-color: #2a2a2a;
+    margin-bottom: -1px;
 }
 .muted{
     opacity: 0.502;
@@ -1273,6 +1303,10 @@ font-family: "Open Sans";
     margin: 0px;
     margin-top: 12px;
 }
+.chose a {
+    text-decoration: none;
+    color: #acacac;
+}
 .costumselect ul{
     display: none;
 }
@@ -1290,4 +1324,38 @@ font-family: "Open Sans";
 }
 .carett{
     margin-right: 12px;
+}
+.logfluid{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.logcontainer{
+    box-shadow: 0px 0px 12px 1px black;
+    border-radius: 3px;
+    padding: 25px;
+    border-bottom: 5px solid  #e1af12;
+}
+.uname{
+    width: 80%;
+    
+}
+.inppass{
+    margin: 8px 12px 0px  12px;
+}
+.logbtn{
+    margin: 12px;
+    color: white;
+    padding: 14px 45px;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #e1ad11 0%, #eb7531 100%);
+}
+.reset-pass{
+    color: #000;
+    float: right;
+    margin: 20px 0px;
+}
+.reset-pass:hover{
+    color: red;
+    border-bottom: 1px solid green;
+   
 }

@@ -1,3 +1,6 @@
+
+
+
 let navbar = document.querySelectorAll('li a')
 navbar.forEach(Element => {
     Element.addEventListener('click', function () {
@@ -130,3 +133,6 @@ optop.forEach(el=>{
 
     })
 })
+
+
+
