@@ -1168,7 +1168,8 @@ text-align: center;
 }
 .footcont{
     background-color: #2a2a2a;
-   
+
+ 
 }
 .muted{
     opacity: 0.502;
@@ -1322,7 +1323,7 @@ font-family: "Open Sans";
     font-family: "Panton Nusx3";
     
 }
-.col {
+.coll {
     flex: 0 0 0%;
 }
 .chose a {
@@ -1332,7 +1333,7 @@ font-family: "Open Sans";
 .lan{
     color: #acacac;
 }
-.lang span{
+.lan {
     color: #acacac;
 }
 .costumselect ul{
