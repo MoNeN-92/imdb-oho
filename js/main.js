@@ -25,6 +25,8 @@ let catGirl = document.querySelector('.girls')
 let deepwater = document.querySelector('.deepwater')
 
 
+if (skyBtn){
+
 
 skyBtn.addEventListener('click', function (e) {
     e.preventDefault();
@@ -34,6 +36,8 @@ skyBtn.addEventListener('click', function (e) {
     deepwater.classList.add('d-none')
     skycrap.classList.remove('d-none')
 })
+}
+if(hangBtn){
 hangBtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.add('d-none')
@@ -42,6 +46,8 @@ hangBtn.addEventListener('click', function (e) {
     deepwater.classList.add('d-none')
     skycrap.classList.add('d-none')
 })
+}
+if(girlBtn){
 girlBtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.add('d-none')
@@ -50,6 +56,8 @@ girlBtn.addEventListener('click', function (e) {
     deepwater.classList.add('d-none')
     skycrap.classList.add('d-none')
 })
+}
+if(deepbtn){
 deepbtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.add('d-none')
@@ -58,6 +66,8 @@ deepbtn.addEventListener('click', function (e) {
     deepwater.classList.remove('d-none')
     skycrap.classList.add('d-none')
 })
+}
+if(transBtn){
 transBtn.addEventListener('click', function (e) {
     e.preventDefault();
     transformer.classList.remove('d-none')
@@ -65,7 +75,9 @@ transBtn.addEventListener('click', function (e) {
     catGirl.classList.add('d-none')
     deepwater.classList.add('d-none')
     skycrap.classList.add('d-none')
-});
+})
+}
+
 
 let serials = document.querySelector('.serials')
 let tv = document.querySelector('.tv')
@@ -73,7 +85,7 @@ let hr = document.querySelector('.chan')
 let tvshow = document.querySelector('.tvshoww')
 let seri = document.querySelector('.serialls')
 
-tv.addEventListener('click', function () {
+tv?.addEventListener('click', function () {
 
     hr.classList.remove('wid')
     hr.classList.add('nextwid')
@@ -82,7 +94,7 @@ tv.addEventListener('click', function () {
     tvshow.classList.remove('d-none')
 
 })
-serials.addEventListener('click', function () {
+serials?.addEventListener('click', function () {
 
     hr.classList.remove('nextwid')
     tvshow.classList.add('d-none')
@@ -95,7 +107,7 @@ let moreCard = document.querySelector('.showmorecontent')
 let moreBtn = document.querySelector('#show-popular-movies')
 
 
-moreBtn.addEventListener('click', function(){
+moreBtn?.addEventListener('click', function(){
     moreCard.classList.toggle('d-none')
     moreCard.classList.toggle('Morre')
 })
@@ -103,7 +115,7 @@ let moreInfoBtn = document.querySelector('.m-info')
 let X_Men = document.querySelector('.X-Men2')
 
 
-moreInfoBtn.addEventListener('click', function(){
+moreInfoBtn?.addEventListener('click', function(){
     X_Men.classList.toggle('d-none')
 })
 
@@ -119,9 +131,7 @@ openDrop.addEventListener('click', function(){
     dropContent.classList.toggle('show')
     dropIcon.classList.toggle('fa-caret-down')
 })
-openDrop.addEventListener('change', function handleChange(event) {
 
-  });
 optop.forEach(el=>{
     el.addEventListener('click', function(){
         let values = this.getAttribute('data-chos');
@@ -132,7 +142,35 @@ optop.forEach(el=>{
       
 
     })
+});
+
+let lan = document.querySelector('.lang')
+let droplang = document.querySelector('.langselect ul')
+let dropic = document.querySelector('.carettt')
+let lanselec = document.querySelectorAll('.langselect ul li')
+let lantext = document.querySelector('.lang span')
+let laninp = document.querySelector('input[name="langdata"]')
+
+lan.addEventListener('click', function(){
+    droplang.classList.toggle('show')
+    dropic.classList.toggle('fa-caret-down')
 })
+
+lanselec.forEach(el=>{
+    el.addEventListener('click', function(){
+        let valuees = this.getAttribute('landg-data')
+        droplang.classList.remove('show')
+        dropic.classList.remove('fa-caret-down');
+        lantext.innerHTML =   laninp.value = valuees;
+        laninp.value = valuees;
+console.log(valuees);
+
+    })
+})
+
+
+
+
 
 
 

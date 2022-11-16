@@ -49,8 +49,18 @@
         <div class="userselect col">
             <form class="option">
                 <input type="hidden" name="datachos" value="">
-                <h6 class="text-uppercase chose"><span>log in</span>  </h6>
+                <h6 class="text-uppercase chose login"><span>log in</span> <i class="fa-solid carett fa-caret-right"></i>  </h6>
               
+            </form>
+        </div>
+        <div class="langselect col">
+            <form class="option">
+                <input type="hidden" class="" name="langdata" value="">
+                <h6 class="text-uppercase chose login lang"> <span>language</span>   <i class="fa-solid carettt fa-caret-right"></i> </h6>
+              <ul class="chose dropic lan position-absolute ">
+                <li landg-data="EN">EN</li>
+                <li landg-data="KA">KA</li>
+              </ul>
             </form>
         </div>
         
@@ -126,12 +136,11 @@
          <br> 
         <button type="submit" class="btn logbtn">Login</button>
         <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
+            <a class="reset-pass " href="#">reset password</a>
       
         </label>
         
     
-           <a class="reset-pass " href="#">reset password</a>
     
      
         
