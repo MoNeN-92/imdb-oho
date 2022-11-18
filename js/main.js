@@ -170,7 +170,38 @@ console.log(valuees);
 
 
 
+function saveData(){
+
+let username = document.getElementById('username').value;
+let psw = document.getElementById('password').value;
+let email = document.getElementById('email').value;
 
 
+let Userarray = JSON.parse(localStorage.getItem('User'))
+
+let users = {
+     names:username,
+    emails:email,
+    password:psw
+
+}
+// let jsonstr = JSON.stringify(Userarray)
+let matchUser = Userarray.find(us=>{
+    return us.emails == email
+   
+  })
+  console.log(matchUser);
+
+  if (matchUser != undefined){
+    alert('მომმხმარებელი მსგავსი ელ:ფოსტით უკვე არსებობს');
+  
+}else{
+    alert('წარმატებით გაიარეთ რეგისტრაცია');
+  Userarray.push(users)
+    let jsonstr = JSON.stringify(Userarray)
+    localStorage.setItem('User', jsonstr)
+}
+
+}
 
 

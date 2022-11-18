@@ -114,12 +114,42 @@
     </nav>
     <!-- end nav -->
 
-<div class="container">
+<div class="container conttop">
     <div class="row">
-        <div class="col-lg-8 bg-warning regcontent"></div>
-        <div class="col-lg-4 bg-dark benefits"></div>
+        <div class="col-lg-8  regcontent">
+   <h5 class="weig">Sign up for an account</h5>
+   <p>Signing up for an account is free and easy. Fill out the form below to get started. JavaScript is required to to <br>
+    continue.</p>
+    <form action="">
+    <label for="username">Username</label>
+    <br>
+    <input type="text"  id="username" required placeholder="Username" value="" name="username">
+    <br>
+    <label for="password">password [8 characters minimum ]</label>
+    <br>
+    <input type="password "  id="password" required  placeholder="Password" value="" name="passwprd">
+    <br>
+    <label for="password">password Confirm</label>
+    <br>
+    <input type="password" id="pswconfirm" required placeholder="password Confirm" value="" name="passwprd">
+    <br>
+    <label for="email">Email</label>
+    <br>
+    <input type="email" id="email" required placeholder="Email" value="" name="email">
+    <br>
+    <p>By clicking the "Sign up" button below, I certify that I have read and agree to the IMDb terms of use and privacy 
+        policy.</p>
+
+        <button type="button" onclick="saveData()" class="btn logbtn">SIGN UP</button>
+        <a class="cansel " href="">cansel</a>
+    </form>
+        </div>
+        <div class="col-lg-4 bg-dark benefits">
+
+        </div>
     </div>
 </div>
+
 
 
 <!-- footer -->
