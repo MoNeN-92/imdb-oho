@@ -167,17 +167,28 @@ console.log(valuees);
 
     })
 })
+const RegForm = document.getElementById('btnRegist')
 
+if (RegForm) {
+    // Not called
+    RegForm.addEventListener('click', function() {
+   
 
-
-function saveData(){
+// function saveData(){
 
 let username = document.getElementById('username').value;
 let psw = document.getElementById('password').value;
 let email = document.getElementById('email').value;
 
 
-let Userarray = JSON.parse(localStorage.getItem('User'))
+
+let Userarray 
+// let User = [];
+
+Userarray = JSON.parse(localStorage.getItem(['User']));
+
+
+  console.log(Userarray);
 
 let users = {
      names:username,
@@ -185,23 +196,23 @@ let users = {
     password:psw
 
 }
+let matchUser 
 // let jsonstr = JSON.stringify(Userarray)
-let matchUser = Userarray.find(us=>{
+matchUser = Userarray?.find(us=>{
     return us.emails == email
    
   })
-  console.log(matchUser);
+
 
   if (matchUser != undefined){
     alert('მომმხმარებელი მსგავსი ელ:ფოსტით უკვე არსებობს');
   
 }else{
     alert('წარმატებით გაიარეთ რეგისტრაცია');
-  Userarray.push(users)
+  Userarray?.push(users)
     let jsonstr = JSON.stringify(Userarray)
     localStorage.setItem('User', jsonstr)
 }
 
+});
 }
-
-
