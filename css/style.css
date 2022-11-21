@@ -2,6 +2,7 @@
     font-family: panton;
     src: url(../fonts/panton.black-caps.otf);
 }
+
 .font{
     font-family: panton;
 }
@@ -1166,11 +1167,23 @@ font-weight: bold;
 font-family: "Panton Mtav3";
 text-align: center;
 }
+
 .footcont{
     background-color: #2a2a2a;
 
  
 }
+.footbot{
+
+    position: absolute;
+    background: #2a2a2a;
+    bottom: 0px;
+    
+    left: 0;
+    right: 0;
+
+}
+
 .muted{
     opacity: 0.502;
 font-size: 12px;
@@ -1462,3 +1475,46 @@ font-family: "Panton Nusx3";
 .weig {
     font-weight: 700;
 }
+.benefittopcard{
+    padding: 22px;
+
+border-radius: 5px;
+background-image: linear-gradient(90deg, #e1ad11 0%, #eb7531 100%);
+
+}
+.benefittopcard h2 {
+
+    color: #ffffff;
+}
+.benefitbodycard{
+    
+    border-radius: 5px;
+filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
+background-color: #ffffff;
+}
+.hov{
+    font-size: 7px;
+}
+.bodycontcircel{
+  font-size: 5 ;
+    border-radius: 50%;
+   color:  #e1ad11;
+   margin-right: 10px;
+}
+.bodycontcircel:hover{
+    font-size: 7px;
+}
+
+.benefitbodycard p:hover .bodycontcircel{
+    font-size: 7px;
+}
+.benemarg{
+    padding-top: 23px;
+}
+.benefitbodycard p{
+    font-family: panton;
+    font-size: 14px;
+margin-left: 10px;
+cursor: pointer;
+}
+

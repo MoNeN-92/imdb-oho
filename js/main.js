@@ -167,52 +167,80 @@ console.log(valuees);
 
     })
 })
-const RegForm = document.getElementById('btnRegist')
+// let username = document.getElementById('username').value;
+// let psw = document.getElementById('password').value;
+// let email = document.getElementById('email').value;
+// let logtext = document.querySelector('.login span')
 
-if (RegForm) {
-    // Not called
-    RegForm.addEventListener('click', function() {
+// const RegForm = document.getElementById('btnRegist')
+
+
+
+
+
+// if (RegForm) {
+
+//     RegForm.addEventListener('click', function() {
    
 
-// function saveData(){
-
-let username = document.getElementById('username').value;
-let psw = document.getElementById('password').value;
-let email = document.getElementById('email').value;
 
 
 
-let Userarray 
-// let User = [];
 
-Userarray = JSON.parse(localStorage.getItem(['User']));
+// let users = {
+//     names:username,
+//     emails:email,
+//     password:psw
+
+// }
 
 
-  console.log(Userarray);
+// let Userarray = []
 
-let users = {
-     names:username,
-    emails:email,
-    password:psw
+// let User = [users]
 
-}
-let matchUser 
-// let jsonstr = JSON.stringify(Userarray)
-matchUser = Userarray?.find(us=>{
-    return us.emails == email
+// Userarray = JSON.parse(localStorage.getItem(User));
+
+
+//   console.log(User);
+
+// let matchUser 
+
+// matchUser = Userarray?.find(us=>{
+//     return us.emails == email
    
-  })
+//   })
+ 
 
-
-  if (matchUser != undefined){
-    alert('მომმხმარებელი მსგავსი ელ:ფოსტით უკვე არსებობს');
+//   if (matchUser != undefined){
+//     alert('მომმხმარებელი მსგავსი ელ:ფოსტით უკვე არსებობს');
   
-}else{
-    alert('წარმატებით გაიარეთ რეგისტრაცია');
-  Userarray?.push(users)
-    let jsonstr = JSON.stringify(Userarray)
-    localStorage.setItem('User', jsonstr)
-}
+// }else{
 
-});
-}
+//     alert('წარმატებით გაიარეთ რეგისტრაცია');
+//   Userarray?.push(users)
+//     let jsonstr = JSON.stringify(Userarray)
+//     localStorage.setItem('User', jsonstr)
+//     logtext.innerText =   users.names ;
+// }
+
+
+
+// });
+// }
+//     let loginUsername = document.getElementById('logusername').value
+//     let loginPass = document.getElementById('logpassword').value
+//     let logbtn = document.getElementById('logbtn')
+    
+//     logbtn.addEventListener('click', function() {
+    
+//         loginUsername = loginUsername+ ""
+  
+// console.log(loginUsername);
+//     });
+  
+
+
+
+
+

@@ -126,22 +126,23 @@
     <br>
 <br>
     <div class="container">
+        <form action="">
         <label class="inppass text-muted" for="uname"><b>Username</b></label>
         <br>
-        <input class="uname" type="text" placeholder="Enter Username" name="uname" required>
+        <input class="uname" id="logusername" value=""  type="text" placeholder="Enter Username" name="uname" required>
         <br>
     
         <label class="inppass text-muted" for="psw"><b>Password</b></label>
         <br>
-        <input class="uname" type="password" placeholder="Enter Password" name="psw" required>
+        <input class="uname" id="logpassword" value=""  type="password" placeholder="Enter Password" name="psw" required>
          <br> 
-        <button type="submit" class="btn logbtn">Login</button>
+        <button type="button" id="logbtn" class="btn logbtn">Login</button>
         <label>
             <a class="reset-pass " href="#">reset password</a>
       
         </label>
         
-    
+    </form>
     
      
         
@@ -159,7 +160,7 @@
 
 <!-- footer -->
 <div class="container-fluid footcont">
-    <footer>
+    <footer class="footbot">
     <div class="container">
         <div class="row ">
             <div class="imdbevery col-lg-4">

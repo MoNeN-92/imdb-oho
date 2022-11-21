@@ -50,7 +50,7 @@
         <div class="userselect coll">
             <form class="option">
                 <input type="hidden" name="datachos" value="">
-                <h6 class="text-uppercase chose login"><span>log in</span> <i class="fa-solid carett fa-caret-right"></i>  </h6>
+                <h6 class="text-uppercase chose login"><span><a href="login.html">log in</a> </span> <i class="fa-solid carett fa-caret-right"></i>  </h6>
               
             </form>
         </div>
@@ -127,11 +127,11 @@
     <br>
     <label for="password">password [8 characters minimum ]</label>
     <br>
-    <input type="password "  id="password" required  placeholder="Password" value="" name="passwprd">
+    <input type="password "  id="password" required minlength="8"  placeholder="Password" value="" name="passwprd">
     <br>
     <label for="password">password Confirm</label>
     <br>
-    <input type="password" id="pswconfirm" required placeholder="password Confirm" value="" name="passwprd">
+    <input type="password" id="pswconfirm" required minlength="8" placeholder="password Confirm" value="" name="passwprd">
     <br>
     <label for="email">Email</label>
     <br>
@@ -144,8 +144,25 @@
         <a class="cansel " href="">cansel</a>
     </form>
         </div>
-        <div class="col-lg-4 bg-dark benefits">
+        <div class="col-lg-4  benefits">
+<div class="benefitcard">
+    <div class="benefittopcard">
+        <h2 class="text-uppercase">benefits of being <br> a member</h2>
+    </div>
+    <div class="benefitbodycard">
+<div class="bodycontent ">
+     <p class="benemarg"><i class="fa-solid fa-circle bodycontcircel hov"></i> Log the movies and TV shows you have watched</p>
+     <p><i class="fa-solid fa-circle bodycontcircel hov"></i>Keep track of your favourite movies and TV shows  <br>
+        &nbsp; &nbsp;&nbsp; and get recommendations from them</p>
+     <p><i class="fa-solid fa-circle bodycontcircel hov"></i>Build and maintain a personal watchlist</p>
+     <p><i class="fa-solid fa-circle bodycontcircel hov"></i>Build custom mixed lists (movies and TV)</p>
+     <p><i class="fa-solid fa-circle bodycontcircel hov"></i>Take part in movie and TV discussions</p>
+     <p><i class="fa-solid fa-circle bodycontcircel hov"></i>Contribute to, and improve the information in our <br>
+        &nbsp; &nbsp; &nbsp; database</p>
 
+</div>
+    </div>
+</div>
         </div>
     </div>
 </div>
@@ -154,7 +171,7 @@
 
 <!-- footer -->
 <div class="container-fluid footcont">
-    <footer>
+    <footer class="footbot">
     <div class="container">
         <div class="row ">
             <div class="imdbevery col-lg-4">
