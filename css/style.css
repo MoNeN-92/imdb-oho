@@ -1173,16 +1173,16 @@ text-align: center;
 
  
 }
-.footbot{
+/* .footbot{
 
     position: absolute;
     background: #2a2a2a;
     bottom: 0px;
-    
+   
     left: 0;
     right: 0;
 
-}
+} */
 
 .muted{
     opacity: 0.502;
@@ -1409,7 +1409,7 @@ font-family: "Open Sans";
     margin: 8px 12px 0px  12px;
 }
 .logbtn{
-    margin-top: 12px;
+   
     color: white;
     padding: 5px 45px;
     border-radius: 5px;
