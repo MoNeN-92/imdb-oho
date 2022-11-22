@@ -19,18 +19,21 @@
 </head>
 
 <body>
-    <div class="navhead mb-0 p-2">
+    <div class="navhead mb-0 p-2 ">
         <div class="container">
             <div class="row">
                           <div class="imdb-logo col-lg-2 ">
-                            <a href="index.html">  <img  src="img/IMDB_Logo_2016.svg.png" alt="#"></a>
-          
+                            <a href="index.html"><img src="img/IMDB_Logo_2016.svg.png" alt="#"></a>
+            
         </div>
        
-        <div class="serch col-lg-6 d-flex">
+        <div class="serch colll ">
+            
             <input  placeholder="find movies, tv shows, celebrities and more" class="text-uppercase text-white bg-dark"  type="text">
+            </div>
+            <div class="colll">
             <div class="costumselect ">
-                <form class="option">
+                <form class="option myflex">
                     <input type="hidden" name="datachos" value="">
                     <h6 class="text-uppercase chose"><span>all</span>  <i class="fa-solid carett fa-caret-right"></i></h6>
                     <ul class="chose position-absolute">
@@ -39,25 +42,26 @@
                         <li data-chos="Celebrities">Celebrities</li>
                         <li data-chos="all">all</li>
                     </ul>
+                    <button type="submit"  class="bg-transparent   serchbtn"> <i class="fa-solid bg-warning serc fa-magnifying-glass"></i></button>
+           
                 </form>
             </div>
          
            
          
-            <i class="fa-solid bg-warning serc fa-magnifying-glass"></i>
            
         </div>
         <div class="userselect coll">
             <form class="option">
-                <input type="hidden" name="datachos" value="">
-                <h6 class="text-uppercase chose login"><span>log in</span> <i class="fa-solid carett fa-caret-right"></i>  </h6>
+                <input type="hidden" name="" value="">
+                <h6 class="text-uppercase chose login "><a href="login.html"> log in  <i class="fa-solid mg carett fa-caret-right"></i></a> </h6>
               
             </form>
         </div>
         <div class="langselect coll">
             <form class="option">
                 <input type="hidden" class="" name="langdata" value="">
-                <h6 class="text-uppercase chose login lang"> <span>language</span>   <i class="fa-solid carettt fa-caret-right"></i> </h6>
+                <h6 class="text-uppercase chose login lang"> <span>language</span>   <i class="fa-solid  carettt fa-caret-right"></i> </h6>
               <ul class="chose dropic lan position-absolute ">
                 <li landg-data="EN">EN</li>
                 <li landg-data="KA">KA</li>
